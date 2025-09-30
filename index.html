@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantor Hukum Wandoyo, S.H., M.H. - Profesional Advokat & Konsultan Hukum</title>
+    <!-- Memuat Tailwind CSS untuk styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Menggunakan font Inter dan warna dasar yang profesional (biru dan emas/krem) */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a202c; /* Hampir hitam */
+        }
+        .text-primary { color: #004c99; } /* Biru Tua Hukum */
+        .bg-primary { background-color: #004c99; }
+        .bg-secondary { background-color: #f7f7f7; } /* Krem/Abu Muda */
+        .border-primary { border-color: #004c99; }
+
+        /* Custom styling untuk Hero Section */
+        #hero {
+            background-color: #004c99; /* Biru Tua */
+            background-image: linear-gradient(rgba(0, 76, 153, 0.8), rgba(0, 76, 153, 0.8)), url('images/background.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Styling untuk navigasi yang sticky */
+        .navbar-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar/Header (Sticky) -->
+    <header class="bg-white sticky top-0 z-50 navbar-shadow">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-primary">
+                WANDOYO LAW FIRM
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#hero" class="text-gray-700 hover:text-primary transition duration-300">Beranda</a>
+                <a href="#about" class="text-gray-700 hover:text-primary transition duration-300">Tentang Kami</a>
+                <a href="#services" class="text-gray-700 hover:text-primary transition duration-300">Layanan</a>
+                <a href="#team" class="text-gray-700 hover:text-primary transition duration-300">Tim Kami</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary transition duration-300">Hubungi Kami</a>
+            </div>
+            <!-- Mobile Menu Button (Hamburger) -->
+            <button id="mobile-menu-btn" class="md:hidden text-primary focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white shadow-lg border-t border-gray-100">
+            <a href="#hero" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50">Beranda</a>
+            <a href="#about" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50">Tentang Kami</a>
+            <a href="#services" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50">Layanan</a>
+            <a href="#team" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50">Tim Kami</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50">Hubungi Kami</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-20 sm:py-32 lg:py-40 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold mb-4 leading-tight">
+                KANTOR HUKUM WANDOYO, S.H., M.H.
+            </h1>
+            <p class="text-xl sm:text-2xl font-light mb-8 max-w-4xl mx-auto">
+                <b>Profesional Advokat & Konsultan Hukum</b>
+            </p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#services" class="inline-block px-8 py-3 text-lg font-semibold bg-white text-primary rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
+                    Lihat Layanan Kami
+                </a>
+                <a href="#contact" class="inline-block px-8 py-3 text-lg font-semibold border-2 border-white text-white rounded-full hover:bg-white hover:text-primary transition duration-300">
+                    Konsultasi Sekarang
+                </a>
+            </div>
+            <p class="mt-8 text-xs opacity-75">
+                Legalitas Resmi: NOMOR: AHU-0001247-AH.01.18 TAHUN 2025
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section (Tentang Kami) -->
+    <section id="about" class="py-16 sm:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Image/Profile Placeholder -->
+                <div class="relative flex justify-center">
+                    <!-- Placeholder untuk foto Bapak Wandoyo, S.H., M.H. (dari Page 2 & 4 PDF) -->
+                    <img src="/images/wandoyo.png" alt="Wandoyo, S.H., M.H." class="w-full max-w-sm rounded-lg shadow-2xl transform hover:scale-[1.02] transition duration-500">
+                    <div class="absolute bottom-0 right-0 p-3 bg-white rounded-tl-lg shadow-xl border-t-4 border-r-4 border-primary">
+                        <p class="text-xs font-semibold text-primary">Advokat Sejak 2016</p>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="space-y-6">
+                    <span class="text-primary text-sm font-semibold uppercase tracking-wider">01. Tentang Kami</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">Kami adalah Firma Hukum Inovatif yang Berkomitmen pada Keadilan.</h2>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Kantor Hukum Wandoyo, S.H., M.H. hadir dengan kewenangan legalitas resmi berdasarkan Akta Nomor 44 Tanggal 23 Juli 2025. Secara personal, Bapak Wandoyo telah memberikan layanan profesional sebagai advokat sejak **Maret 2016**, membawa pengalaman luas dalam dunia hukum.
+                    </p>
+
+                    <div class="space-y-3 pt-4">
+                        <h3 class="text-xl font-semibold text-primary">Siapakah Kami:</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-primary font-bold mr-3 text-2xl leading-none">&bull;</span>
+                                <div><b>Inovator Hukum:</b> Menyediakan solusi hukum dengan pendekatan profesional dan <b>kreatif</b>.</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary font-bold mr-3 text-2xl leading-none">&bull;</span>
+                                <div><b>Penyedia Keadilan:</b> Mempermudah akses keadilan, termasuk melalui layanan <b>pro bono</b>.</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary font-bold mr-3 text-2xl leading-none">&bull;</span>
+                                <div><b>Standar Profesional:</b>Bekerja berdasarkan standar profesionalisme tinggi demi kualitas pelayanan.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visi & Misi Section -->
+    <section class="py-16 sm:py-24 bg-secondary">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">Visi & Misi Kami</h2>
+            <div class="grid lg:grid-cols-2 gap-10">
+
+                <!-- Visi -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-primary">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Visi</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <span class="text-3xl font-extrabold text-primary pt-1">01</span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Keadilan untuk Semua</p>
+                                <p class="text-sm text-gray-600">Menciptakan sistem hukum yang transparan dan dapat diakses oleh seluruh lapisan masyarakat tanpa terkecuali.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <span class="text-3xl font-extrabold text-primary pt-1">02</span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Pelopor Inovasi</p>
+                                <p class="text-sm text-gray-600">Menjadi pelopor dalam pengembangan layanan hukum berbasis inovasi yang berkelanjutan dan berorientasi pada keadilan.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <span class="text-3xl font-extrabold text-primary pt-1">03</span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Istana Keadilan</p>
+                                <p class="text-sm text-gray-600">Mengantarkan setiap pencari keadilan menuju solusi hukum terbaik yang membawa rasa aman dan perlindungan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Misi -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-primary">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Misi</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <span class="text-3xl font-extrabold text-primary pt-1">&#10003;</span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Pelayanan Menyeluruh</p>
+                                <p class="text-sm text-gray-600">Memberikan layanan hukum komprehensif (konsultasi, litigasi, dan non-litigasi) di berbagai bidang hukum.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <span class="text-3xl font-extrabold text-primary pt-1">&#10003;</span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Kualitas Unggul</p>
+                                <p class="text-sm text-gray-600">Memastikan setiap layanan memenuhi standar kualitas tinggi dengan dukungan tim profesional.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <span class="text-3xl font-extrabold text-primary pt-1">&#10003;</span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Keseimbangan Akses</p>
+                                <p class="text-sm text-gray-600">Menyediakan layanan hukum yang adil dan setara, termasuk kerja **pro bono** bagi yang membutuhkan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Bidang Praktik) -->
+    <section id="services" class="py-16 sm:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-primary text-sm font-semibold uppercase tracking-wider text-center block mb-3">02. Bidang Praktik & Layanan</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">Keahlian Hukum yang Kami Tawarkan</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1: Hukum Pidana -->
+                <div class="bg-secondary p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-3xl text-primary mb-3">⚖️</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Hukum Pidana</h3>
+                    <p class="text-gray-600 text-sm">Menangani kasus kriminal termasuk pembelaan dan investigasi hukum secara mendalam.</p>
+                </div>
+
+                <!-- Card 2: Hukum Perdata -->
+                <div class="bg-secondary p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-3xl text-primary mb-3">🤝</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Hukum Perdata</h3>
+                    <p class="text-gray-600 text-sm">Penyelesaian sengketa perdata, termasuk kontrak, warisan, dan klaim lainnya.</p>
+                </div>
+
+                <!-- Card 3: Ketenagakerjaan -->
+                <div class="bg-secondary p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-3xl text-primary mb-3">💼</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Hukum Ketenagakerjaan</h3>
+                    <p class="text-gray-600 text-sm">Spesialisasi dalam isu perburuhan, PHK, perjanjian kerja, dan hak-hak pekerja.</p>
+                </div>
+
+                <!-- Card 4: Perizinan & Bisnis -->
+                <div class="bg-secondary p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-3xl text-primary mb-3">🏢</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Hukum Perizinan & Bisnis</h3>
+                    <p class="text-gray-600 text-sm">Menangani aspek hukum perizinan usaha, pengelolaan kontrak, dan sengketa usaha.</p>
+                </div>
+            </div>
+
+            <!-- Detail Layanan -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-primary mb-6 text-center">Ruang Lingkup Layanan Kami</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="p-4 border border-gray-200 rounded-lg text-center">
+                        <p class="font-semibold text-lg text-gray-800">Layanan Litigasi</p>
+                        <p class="text-sm text-gray-500">Pendampingan penuh di pengadilan (gugatan atau pembelaan).</p>
+                    </div>
+                    <div class="p-4 border border-gray-200 rounded-lg text-center">
+                        <p class="font-semibold text-lg text-gray-800">Layanan Non-Litigasi</p>
+                        <p class="text-sm text-gray-500">Penyelesaian sengketa melalui mediasi atau negosiasi profesional.</p>
+                    </div>
+                    <div class="p-4 border border-gray-200 rounded-lg text-center">
+                        <p class="font-semibold text-lg text-gray-800">Legal Drafting</p>
+                        <p class="text-sm text-gray-500">Penyusunan dan revisi dokumen serta kontrak hukum.</p>
+                    </div>
+                    <div class="p-4 border border-gray-200 rounded-lg text-center">
+                        <p class="font-semibold text-lg text-gray-800">Legal Opinion & Due Diligence</p>
+                        <p class="text-sm text-gray-500">Penilaian risiko hukum, kepatuhan regulasi, dan opini hukum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section (Tim Kami) -->
+    <section id="team" class="py-16 sm:py-24 bg-secondary">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-primary text-sm font-semibold uppercase tracking-wider text-center block mb-3">03. Partner & Staf</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">Tim Advokat dan Konsultan Berpengalaman</h2>
+
+            <!-- Main Partner -->
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-2xl mb-12 border-b-8 border-primary">
+                 <h3 class="text-2xl font-bold text-primary mb-4 text-center">Founding Partner</h3>
+                 <div class="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6">
+                    <img src="images/wandoyo 100x120.png" alt="Wandoyo, S.H., M.H." class="w-24 h-24 rounded-full object-cover shadow-lg border-2 border-primary">
+                    <div class="text-center sm:text-left">
+                        <p class="text-xl font-bold text-gray-800">Wandoyo, S.H., M.H.</p>
+                        <p class="text-primary font-semibold mb-2">Profesional Advokat & Konsultan Hukum</p>
+                        <p class="text-sm text-gray-600">Berpengalaman di dunia advokat sejak Maret 2016 dan berkomitmen memberikan layanan hukum yang profesional dan tepercaya.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Partners Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Partner 1: Rada Istana Hatas -->
+                <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                    <img src="images/Rada Istana Hatas 100x120.png" alt="Rada Istana Hatas, S.H." class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-gray-200">
+                    <p class="font-bold text-gray-800">Rada Istana Hatas, S.H.</p>
+                    <p class="text-sm text-primary mb-2">Partner</p>
+                    <p class="text-xs text-gray-500">Lulusan S1 Universitas Pamulang, ahli di bidang hukum pidana dan perdata dengan pendekatan kekeluargaan.</p>
+                </div>
+                <!-- Partner 2: Ramona Zabrina -->
+                <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                    <img src="images/Ramona Zabrina 100x120.png" alt="Ramona Zabrina, S.H." class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-gray-200">
+                    <p class="font-bold text-gray-800">Ramona Zabrina, S.H.</p>
+                    <p class="text-sm text-primary mb-2">Partner</p>
+                    <p class="text-xs text-gray-500">Lulusan Unpar, berpengalaman di Hukum Perdata, Pidana, PHI, Perusahaan, dan PTUN.</p>
+                </div>
+                <!-- Partner 3: Eddy Budiyanto -->
+                <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                    <img src="images/Eddy Budiyanto 100x120.png" alt="Eddy Budiyanto, S.H." class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-gray-200">
+                    <p class="font-bold text-gray-800">Eddy Budiyanto, S.H.</p>
+                    <p class="text-sm text-primary mb-2">Partner</p>
+                    <p class="text-xs text-gray-500">Pencinta alam, berpegangan pada cita-cita mewujudkan "keadilan sosial bagi seluruh rakyat Indonesia."</p>
+                </div>
+                <!-- Partner 4: Rambo C. Tampubolon -->
+                <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                    <img src="images/Rambo C. Tampubolon 100x120.png" alt="Rambo C. Tampubolon, S.H." class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-gray-200">
+                    <p class="font-bold text-gray-800">Rambo C. Tampubolon, S.H.</p>
+                    <p class="text-sm text-primary mb-2">Partner</p>
+                    <p class="text-xs text-gray-500">Lulusan FH Universitas Tama Jagakarsa, mantan Asisten Pengacara Publik LBH Jakarta.</p>
+                </div>
+            </div>
+            <!-- Staff -->
+            <div class="mt-8 text-center">
+                <p class="font-semibold text-gray-800">General Staff:</p>
+                <p class="text-sm text-gray-600">Moh. Cahyo Fajri (Mahasiswa Hukum) - Staf General yang memiliki tekad besar untuk belajar dan memacu semangat generasi muda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Hubungi Kami) -->
+    <section id="contact" class="py-16 sm:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-primary text-sm font-semibold uppercase tracking-wider text-center block mb-3">04. Hubungi Kami</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">Siap Melayani Kebutuhan Hukum Anda</h2>
+
+            <div class="max-w-4xl mx-auto bg-secondary p-8 rounded-xl shadow-xl">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Contact Info -->
+                    <div class="space-y-6">
+                        <p class="font-semibold text-gray-800 mb-4">"AMANAH DAN PROFESIONAL DALAM PELAYANAN" - "MEMBERIKAN SOLUSI TANPA MENGHAKIMI"</p>
+
+                        <!-- Phone -->
+                        <div>
+                            <p class="text-sm font-semibold text-primary">Nomor Telepon:</p>
+                            <p class="text-gray-700">Office: <b>+6221-2696-6520</b></p>
+                            <p class="text-gray-700">Mobile Phone: <b>+62813-9887-6938</b></p>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <p class="text-sm font-semibold text-primary">Alamat Email:</p>
+                            <p class="text-gray-700">KantorHukum.Wandoyoshmh@gmail.com</p>
+                        </div>
+
+                        <!-- Address -->
+                        <div>
+                            <p class="text-sm font-semibold text-primary">Kantor Operasional:</p>
+                            <p class="text-gray-700">KPI Building Lantai 2 Ruang Talenta,</p>
+                            <p class="text-gray-700">Jalan Tegal Parang Utara No. 03 Mampang Prapatan,</p>
+                            <p class="text-gray-700">Jakarta Selatan 12790</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form for WhatsApp -->
+                    <div class="bg-white p-6 rounded-lg shadow-inner">
+                        <h3 class="text-xl font-bold text-primary mb-4">Permintaan Konsultasi (Via WhatsApp)</h3>
+                        <form id="whatsapp-form" onsubmit="sendWhatsApp(event)" class="space-y-4">
+                            <input type="text" id="nama" placeholder="Nama Lengkap" class="w-full p-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" required>
+                            <input type="email" id="email" placeholder="Email Anda" class="w-full p-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" required>
+                            <input type="tel" id="telepon" placeholder="Nomor Telepon (Cth: +6281...)" class="w-full p-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary">
+                            <textarea id="masalah" placeholder="Jelaskan secara singkat masalah hukum Anda..." rows="4" class="w-full p-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" required></textarea>
+                            <button type="submit" class="w-full bg-primary text-white p-3 rounded-md font-semibold hover:bg-opacity-90 transition duration-300">
+                                Kirim Permintaan via WhatsApp
+                            </button>
+                            <p id="success-message" class="hidden text-green-600 text-center font-semibold text-sm mt-3">Pesan dikirim! Anda akan diarahkan ke WhatsApp.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm mb-2">&copy; 2025 Kantor Hukum Wandoyo, S.H., M.H. | Profesional Advokat & Konsultan Hukum</p>
+            <p class="text-xs opacity-75">Kepercayaan Klien merupakan hal yang berharga bagi kami. Kami mengedepankan amanah dan profesional dalam pelayanan.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Mobile Menu dan WhatsApp -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Menutup menu mobile setelah klik link
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Fungsi untuk mengirim pesan via WhatsApp
+        function sendWhatsApp(event) {
+            // Mencegah pengiriman formulir standar
+            event.preventDefault();
+
+            // Mengambil nilai dari input
+            const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email').value;
+            const telepon = document.getElementById('telepon').value;
+            const masalah = document.getElementById('masalah').value;
+            const phoneNumber = '6289637103742'; // Nomor WhatsApp tujuan (0 diubah menjadi 62)
+
+            // Membuat pesan format
+            let message = `*Permintaan Konsultasi Hukum Baru*\n\n`;
+            message += `*Nama:* ${nama}\n`;
+            message += `*Email:* ${email}\n`;
+            message += `*Nomor Telp:* ${telepon || '(Tidak Diisi)'}\n`;
+            message += `*Masalah:* ${masalah}\n\n`;
+            message += `Mohon dilanjutkan segera. Terima kasih.`;
+
+            // Meng-encode pesan untuk URL
+            const encodedMessage = encodeURIComponent(message);
+
+            // Membuat URL WhatsApp
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+            // Menampilkan pesan sukses sebentar
+            const successMessage = document.getElementById('success-message');
+            successMessage.classList.remove('hidden');
+            setTimeout(() => {
+                successMessage.classList.add('hidden');
+            }, 3000);
+
+            // Membuka tab baru/window untuk WhatsApp
+            window.open(whatsappURL, '_blank');
+            
+            // Opsional: Reset form setelah pengiriman (setelah window terbuka)
+            document.getElementById('whatsapp-form').reset();
+        }
+    </script>
+</body>
+</html>
